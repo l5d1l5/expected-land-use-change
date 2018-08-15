@@ -7,9 +7,9 @@ This biogeographical analysis package displays and summarizes land use change da
 > This dataset contains a projection of land use and land cover for the conterminous United States for the period 2001 - 2061. This projection used the USGS's LUCAS (Land Use and Carbon Scenario Simulator) model to project a business as usual scenario of land cover and land use change. By running the LUCAS model on the USGS's YETI high performance computer and parallelizing the computation, we ran 100 Monte Carlo simulations based on empirically observed rates of change at a relatively fine scale (270m). We sampled from multiple observed rates of change at the county level to introduce heterogeneity into the Monte Carlo simulations. Using this approach allowed the model to project different outcomes that were summarized to produce estimates of likelihood of development at any given location. These estimates can then be used in conservation planning to determine where, and at what rate, land use change would occur according to this scenario.
 
 #### Inputs
-> "Omernik L3" from  
-> "Threat.tif" from https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e 
-> "DevelopmentPercent2061.tif" from https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e
+"Omernik L3" from  
+"Threat.tif" from https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e 
+"DevelopmentPercent2061.tif" from https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e
 
 #### Outputs
 Area of High, Med, Low, and No threat summarized by L3 ecoregions in .csv. UPLOAD
