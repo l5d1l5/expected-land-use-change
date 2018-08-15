@@ -8,7 +8,7 @@ This biogeographical analysis package displays and summarizes land use change da
 
 #### Inputs
 > "Omernik L3" from  
-> "Threat.tif" from https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e
+> "Threat.tif" from https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e 
 > "DevelopmentPercent2061.tif" from https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e
 
 #### Outputs
