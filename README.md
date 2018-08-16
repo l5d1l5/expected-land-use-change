@@ -12,7 +12,7 @@ This biogeographical analysis package displays and summarizes a land use change 
 - [DevelopmentPercent2061.tif](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
 
 #### Outputs
-- Tabular output of area in the High, Med, Low, and No threat classes summarized by L3 ecoregions. Also includes 'All Threat' (sum of High, Med, and Low threat), and the percent of ecoregion threatened as 'All Threat/Total Area'. [Threat by Ecoregions](https://github.com/usgs-bis/expected-land-use-change/blob/readme-edits.md/Threat_30m_L3_Ecoregions.txt)
+- [Threat by Ecoregions](https://github.com/usgs-bis/expected-land-use-change/blob/readme-edits.md/Threat_30m_L3_Ecoregions.txt) Tabular output of area in the High, Med, Low, and No threat classes summarized by L3 ecoregions. Also includes 'All Threat' (sum of High, Med, and Low threat), and the percent of ecoregion threatened as 'All Threat/Total Area'. 
 
 #### Constraints
 These data are meant to be used at a scale of 1:100,000 or smaller (such as 1:250,000 or 1:500,000) for the purpose of assessing land use change, and the potential consequences of that change over large geographic regions.
