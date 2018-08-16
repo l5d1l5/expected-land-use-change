@@ -7,7 +7,7 @@ This biogeographical analysis package displays and summarizes a land use change 
 > This dataset contains a projection of land use and land cover for the conterminous United States for the period 2001 - 2061. This projection used the USGS's LUCAS (Land Use and Carbon Scenario Simulator) model to project a business as usual scenario of land cover and land use change. By running the LUCAS model on the USGS's YETI high performance computer and parallelizing the computation, we ran 100 Monte Carlo simulations based on empirically observed rates of change at a relatively fine scale (270m). We sampled from multiple observed rates of change at the county level to introduce heterogeneity into the Monte Carlo simulations. Using this approach allowed the model to project different outcomes that were summarized to produce estimates of likelihood of development at any given location. These estimates can then be used in conservation planning to determine where, and at what rate, land use change would occur according to this scenario.
 
 #### Inputs
-- [Omernik level 3 ecoregions from EPA][ftp://newftp.epa.gov/EPADataCommons/ORD/Ecoregions/us/us_eco_l3.zip]
+- [Omernik level 3 ecoregions from EPA](ftp://newftp.epa.gov/EPADataCommons/ORD/Ecoregions/us/us_eco_l3.zip)
 - [Threat.tif](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
 - [DevelopmentPercent2061.tif](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
 
@@ -15,8 +15,8 @@ This biogeographical analysis package displays and summarizes a land use change 
 - Tabular output of area in the High, Med, Low, and No threat classes summarized by L3 ecoregions (.csv? file)
 
 #### Constraints
-These data are meant to be used at a scale of 1:100,000 or smaller (such as 1:250,000 or 1:500,000) for the purpose of assessing the conservation status of animals and vegetation types over large geographic regions.
-Scale: The data were produced with an intended application at the ecoregion level, that is, geographic areas from several hundred thousand to millions of hectares in size. The data provide a coarse-filter approach to analysis, meaning that not every occurrence of every plant community or animal species habitat is mapped, only larger, more generalized distributions.
+These data are meant to be used at a scale of 1:100,000 or smaller (such as 1:250,000 or 1:500,000) for the purpose of assessing land use change, and the potential consequences of that change over large geographic regions.
+Scale: These data have been resmapled using nearest neighbor methods from 270m down to 30m to match the output resolution of other primary datasets on the National Biogeographic Map. The data were produced with intended analysis at the ecoregion level, that is, geographic areas from several hundred thousand to millions of hectares in size. The data provide a coarse-filter approach to analysis, and are a projection of potential land use change, based on observed trends. 
 
 #### Dependencies
 #### Code
