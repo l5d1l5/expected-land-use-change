@@ -18,11 +18,6 @@ This biogeographical analysis package displays and summarizes a land use change 
 These data are meant to be used at a scale of 1:100,000 or smaller (such as 1:250,000 or 1:500,000) for the purpose of assessing land use change, and the potential consequences of that change over large geographic regions.
 Scale: These data have been resmapled using nearest neighbor methods from 270m down to 30m to match the output resolution of other primary datasets on the National Biogeographic Map. The data were produced with intended analysis at the ecoregion level, that is, geographic areas from several hundred thousand to millions of hectares in size. The data provide a coarse-filter approach to analysis, and are a projection of potential land use change, based on observed trends. 
 
-#### Dependencies
-#### Code
-#### Tests
-#### Provenance
-
 #### Citations
 Kreitler, J., and Sleeter, B.M., 2018, A national land use and land cover projection for threat assessment and conservation planning: U.S. Geological Survey data release, https://doi.org/10.5066/F77080Q7.
 
