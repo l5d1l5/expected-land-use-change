@@ -6,7 +6,7 @@
 # tabulates area of each class within each L3 ecoregion, cleans up results table. 
 ##########################################################################
 
-import arcpy, os
+import arcpy
 from arcpy import env
 from arcpy.sa import *
 
