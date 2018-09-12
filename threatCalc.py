@@ -1,6 +1,6 @@
 # Name: threatCalc.py
 # Description: calculates 'threat' from land use change projections
-# Requirements: Spatial Analyst Extension
+# Requirements: Spatial Analyst Extension & arcpy
 # Author: Jason Kreitler
 # Comments: takes 270m input of "threat.tif" and resammples to 30m, 
 # tabulates area of each class within each L3 ecoregion, cleans up results table. 
@@ -39,7 +39,7 @@ arcpy.AddField_management(outTable, "HighThreat", 'FLOAT')
 arcpy.AddField_management(outTable, "AllThreat", 'FLOAT')
 arcpy.AddField_management(outTable, "Total", 'FLOAT')
 arcpy.AddField_management(outTable, "Percent", 'FLOAT')
-# convert to Ha, sum, %
+# convert m^2 to Ha, sum threat, add % threatened
 arcpy.CalculateField_management(outTable, "NoThreat", "!VALUE_1!*0.0001", "PYTHON_9.3") 
 arcpy.CalculateField_management(outTable, "LowThreat", "!VALUE_2!*0.0001", "PYTHON_9.3")
 arcpy.CalculateField_management(outTable, "MedThreat", "!VALUE_3!*0.0001", "PYTHON_9.3")
