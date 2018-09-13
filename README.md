@@ -10,7 +10,7 @@ This biogeographical analysis package displays and summarizes a land use change 
 In this initial release, this code summarizes the threat facing L3 ecoregions. The script ["threatCalc.py"](https://github.com/usgs-bis/expected-land-use-change/blob/master/threatCalc.py) is an arcpy script that calculates the area of each threat class within each L3 ecoregion. Alternatively, a different shapefile or zone raster could be used in place of the L3 ecoregion boundaries to summarize the threat data at a user's desired geography. "threatCalc.py" simply summarizes the threat witin an area; to go beyond and understand the threat to ecological systems, the script "ecolSysThreatCalc.py" determines where the expected land use change will displace ecosystems at the ecological systems classification layer. 
 
 #### Dependencies
-The threaCalc.py and ecoSysThreatCalc.py scripts were written using Python 2.7 and arcpy 10.5.1. Future releases will use open source software.  
+The "threaCalc.py" and "ecoSysThreatCalc.py" scripts were written using Python 2.7 and arcpy 10.5.1. Future releases will use open source software.  
 
 #### Inputs
 - ["Threat.tif" from Kreitler and Sleeter (2018)](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
