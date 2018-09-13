@@ -13,10 +13,10 @@ In this initial release, this code summarizes the threat facing L3 ecoregions. T
 The threaCalc.py and ecoSysThreatCalc.py scripts were written using Python 2.7 and arcpy 10.5.1. Future releases will use open source software.  
 
 #### Inputs
-- [Omernik level 3 ecoregions from EPA](https://www.epa.gov/eco-research/level-iii-and-iv-ecoregions-continental-united-states)
-- [Threat.tif](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
-- [DevelopmentPercent2061.tif](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
+- [Threat.tif from Kreitler and Sleeter (2018)](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
+- [DevelopmentPercent2061.tif from Kreitler and Sleeter (2018)](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
 - [Ecological systems from GAP](https://gapanalysis.usgs.gov/gaplandcover/data/)
+- [Omernik level 3 ecoregions from EPA](https://www.epa.gov/eco-research/level-iii-and-iv-ecoregions-continental-united-states)
 
 #### Outputs
 - [Threat by Ecoregions](https://github.com/usgs-bis/expected-land-use-change/blob/readme-edits.md/Threat_30m_L3_Ecoregions.txt) Tabular output of area in the High, Med, Low, and No threat classes summarized by L3 ecoregions. Also includes 'All Threat' (sum of High, Med, and Low threat), and the percent of ecoregion threatened as 'All Threat/Total Area'. 
