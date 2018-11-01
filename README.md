@@ -2,14 +2,23 @@
 How would a business as usual growth scenario affect ecosystems across the USA, by 2061? 
 
 #### Purpose
-This biogeographical analysis package displays and summarizes a land use change projection from Kreitler and Sleeter (2018), "A national land use and land cover projection for threat assessment and conservation planning". The classified threat layer from this dataset is used to project the amount of area threatened by development in each Omernik Level III Ecoregion. Threat is defined in the data release as no/low/medium/high threat according to likelihood of developed land use change (0%, <33%, <66%, <100%, respectively). This information could be used in analyses to determine how much area is expected to transition into a developed class by for each ecoregions in the Continental USA. Further detail excerpted from the data release:
+This biogeographical analysis package displays and summarizes a land use change projection from Kreitler and Sleeter (2018), "A national land use and land cover projection for threat assessment and conservation planning". The classified threat layer from this dataset is used to project the amount of area threatened by development in each Omernik Level III (L3) Ecoregion. Threat is defined in the data release as no/low/medium/high threat according to likelihood of developed land use change (0%, <33%, <66%, <100%, respectively). This information could be used in analyses to determine how much area is expected to transition into a developed class by for each ecoregions in the Continental USA. Further detail excerpted from the data release:
 
 > This dataset contains a projection of land use and land cover for the conterminous United States for the period 2001 - 2061. This projection used the USGS's LUCAS (Land Use and Carbon Scenario Simulator) model to project a business as usual scenario of land cover and land use change. By running the LUCAS model on the USGS's YETI high performance computer and parallelizing the computation, we ran 100 Monte Carlo simulations based on empirically observed rates of change at a relatively fine scale (270m). We sampled from multiple observed rates of change at the county level to introduce heterogeneity into the Monte Carlo simulations. Using this approach allowed the model to project different outcomes that were summarized to produce estimates of likelihood of development at any given location. These estimates can then be used in conservation planning to determine where, and at what rate, land use change would occur according to this scenario.
 
+#### Code
+In this initial release, this code summarizes the threat facing L3 ecoregions. The script ["threatCalc.py"](https://github.com/usgs-bis/expected-land-use-change/blob/master/threatCalc.py) is an arcpy script that calculates the area of each threat class within each L3 ecoregion. Alternatively, a different shapefile or zone raster could be used in place of the L3 ecoregion boundaries to summarize the threat data at a user's desired geography. "threatCalc.py" simply summarizes the threat witin an area; to go beyond and understand the threat to ecological systems, the script "ecolSysThreatCalc.py" determines where the expected land use change will displace ecosystems at the ecological systems classification layer within each L3 ecoregion. 
+
+A Jupyter Notebook file ["methodsNotebook.ipynb"](https://github.com/usgs-bis/expected-land-use-change/blob/master/methodsNotebook.ipynb) also explains each step and walks through this analysis, illustrating results.
+
+#### Dependencies
+The "threaCalc.py" and "ecolSysThreatCalc.py" scripts were written using Python 2.7 and arcpy 10.5.1. Future releases will use open source software.  
+
 #### Inputs
+- ["Threat.tif" from Kreitler and Sleeter (2018)](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
+- ["DevelopmentPercent2061.tif" from Kreitler and Sleeter (2018)](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
+- [Ecological systems from GAP](https://gapanalysis.usgs.gov/gaplandcover/data/)
 - [Omernik level 3 ecoregions from EPA](https://www.epa.gov/eco-research/level-iii-and-iv-ecoregions-continental-united-states)
-- [Threat.tif](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
-- [DevelopmentPercent2061.tif](https://www.sciencebase.gov/catalog/item/5a87249de4b00f54eb3a2e1e)
 
 #### Outputs
 - [Threat by Ecoregions](https://github.com/usgs-bis/expected-land-use-change/blob/readme-edits.md/Threat_30m_L3_Ecoregions.txt) Tabular output of area in the High, Med, Low, and No threat classes summarized by L3 ecoregions. Also includes 'All Threat' (sum of High, Med, and Low threat), and the percent of ecoregion threatened as 'All Threat/Total Area'. 
